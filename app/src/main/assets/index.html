@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webkar Studio | Professional Website Design & Digital Solutions</title>
+  <meta name="description" content="Webkar Studio - महाराष्ट्रातील व्यवसायांसाठी अ‍ॅट्रॅक्टिव्ह, सुपर-फास्ट आणि SEO-फ्रेंडली वेबसाईट्स डिझाइन.">
+  
+  <!-- Google Fonts Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       1. Sticky Navbar
+       ========================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#" class="brand-logo">
+        <div class="brand-icon">W</div>
+        <span>Webkar<span class="text-gradient">Studio</span></span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#themes" class="nav-link">थीम्स (Themes)</a></li>
+        <li><a href="#about" class="nav-link">आमच्याबद्दल</a></li>
+        <li><a href="#services" class="nav-link">सेवा</a></li>
+        <li><a href="#portfolio" class="nav-link">16+ डिझाइन्स</a></li>
+        <li><a href="#calculator" class="nav-link">कॅल्क्युलेटर</a></li>
+        <li><a href="#pricing" class="nav-link">किंमत</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#contact" class="nav-link">संपर्क</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Live Theme Switcher Pill -->
+        <div class="theme-selector-bar">
+          <span style="font-size:0.78rem;font-weight:700;color:var(--text-muted);">🎨 थीम:</span>
+          <div class="theme-picker-pills">
+            <div class="theme-pill cyber active" onclick="switchTheme('cyber')" title="Midnight Cyber Theme"></div>
+            <div class="theme-pill gold" onclick="switchTheme('gold')" title="Luxury Gold Theme"></div>
+            <div class="theme-pill emerald" onclick="switchTheme('emerald')" title="Swadeshi Emerald Theme"></div>
+            <div class="theme-pill crimson" onclick="switchTheme('crimson')" title="Sunset Crimson Theme"></div>
+            <div class="theme-pill light" onclick="switchTheme('light')" title="Clean Light Mode"></div>
+          </div>
+        </div>
+
+        <button class="btn btn-secondary btn-sm open-modal-btn">फ्री कन्सल्टेशन</button>
+        <button class="btn btn-whatsapp btn-sm" onclick="openWhatsApp('नमस्कार Webkar Studio, मला वेबसाईट डिझाइनबद्दल माहिती हवी आहे.')">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </button>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       2. Hero Section
+       ========================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="section-badge">
+          <span>✨ Professional Website Design Studio</span>
+        </div>
+        
+        <h1 class="hero-headline">
+          तुमच्या बिझनेससाठी <span class="text-gradient">Attractive & Professional</span> Website
+        </h1>
+        
+        <p class="hero-subtext">
+          आम्ही महाराष्ट्रातील व्यवसायांसाठी अ‍ॅट्रॅक्टिव्ह, सुपर-फास्ट, मोबाईल-फ्रेंडली आणि ग्राहक आकर्षित करणाऱ्या वेबसाईट्स डिझाइन करतो.
+        </p>
+
+        <div class="hero-ctas">
+          <button class="btn btn-primary open-modal-btn" data-plan="Hero Consultation">
+            <i class="fas fa-rocket"></i> फ्री कन्सल्टेशन बुक करा
+          </button>
+          <button class="btn btn-whatsapp" onclick="openWhatsApp('नमस्कार Webkar Studio, मला नवीन वेबसाईट सुरू करायची आहे.')">
+            <i class="fab fa-whatsapp"></i> WhatsApp वर बोलूया
+          </button>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">50+</span>
+            <span class="stat-label">वेबसाईट्स पूर्ण</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Client Satisfaction</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">Fast 5-Day</span>
+            <span class="stat-label">Quick Delivery</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <img src="images/hero-preview.webp" alt="Webkar Studio Showcase" class="hero-image">
+        <div class="hero-floating-badge">
+          <div class="brand-icon" style="width:32px;height:32px;font-size:0.9rem;">⚡</div>
+          <div>
+            <div style="font-weight:700;font-size:0.9rem;">Ready to Grow Online?</div>
+            <div style="color:var(--text-muted);font-size:0.78rem;">नवीन वेबसाईट प्रोजेक्ट सुरू करा</div>
+          </div>
+          <button class="btn btn-primary btn-sm open-modal-btn" style="margin-left:10px;">Start Project</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       2.5 Theme Studio & Brand Vibe Selector
+       ========================================== -->
+  <section class="section" id="themes" style="background: rgba(21, 24, 33, 0.6); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-badge">🎨 Theme Studio</div>
+        <h2 class="section-title">तुमच्या ब्रँडसाठी <span class="text-gradient">Custom Aesthetic Themes</span></h2>
+        <p class="section-subtitle">खालील पैकी कोणत्याही थीमला क्लिक करून थेट संपूर्ण वेबसाईटचा Look & Feel बदलून पहा!</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
+        <!-- Theme Card 1 -->
+        <div class="feature-card text-center" onclick="switchTheme('cyber')" style="cursor:pointer; border-top: 4px solid #3B82F6;">
+          <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg, #3B82F6, #8B5CF6);margin:0 auto 12px auto;"></div>
+          <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:6px;">Midnight Cyber</h3>
+          <p style="font-size:0.85rem;color:var(--text-muted);">Electric Blue & Violet Glassmorphism for High-Tech Brands</p>
+          <button class="btn btn-secondary btn-sm" style="margin-top:12px;width:100%;">Apply Theme</button>
+        </div>
+
+        <!-- Theme Card 2 -->
+        <div class="feature-card text-center" onclick="switchTheme('gold')" style="cursor:pointer; border-top: 4px solid #EAB308;">
+          <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg, #EAB308, #F97316);margin:0 auto 12px auto;"></div>
+          <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:6px;">Royal Gold</h3>
+          <p style="font-size:0.85rem;color:var(--text-muted);">Metallic Gold & Obsidian Charcoal for Luxury & Jewellery</p>
+          <button class="btn btn-secondary btn-sm" style="margin-top:12px;width:100%;">Apply Theme</button>
+        </div>
+
+        <!-- Theme Card 3 -->
+        <div class="feature-card text-center" onclick="switchTheme('emerald')" style="cursor:pointer; border-top: 4px solid #10B981;">
+          <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg, #10B981, #06B6D4);margin:0 auto 12px auto;"></div>
+          <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:6px;">Swadeshi Emerald</h3>
+          <p style="font-size:0.85rem;color:var(--text-muted);">Fresh Mint & Forest Green for Organic, Agro & Wellness</p>
+          <button class="btn btn-secondary btn-sm" style="margin-top:12px;width:100%;">Apply Theme</button>
+        </div>
+
+        <!-- Theme Card 4 -->
+        <div class="feature-card text-center" onclick="switchTheme('crimson')" style="cursor:pointer; border-top: 4px solid #F43F5E;">
+          <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg, #F43F5E, #FB923C);margin:0 auto 12px auto;"></div>
+          <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:6px;">Sunset Crimson</h3>
+          <p style="font-size:0.85rem;color:var(--text-muted);">Vibrant Flame Orange & Rose Red for Gyms & Food Hubs</p>
+          <button class="btn btn-secondary btn-sm" style="margin-top:12px;width:100%;">Apply Theme</button>
+        </div>
+
+        <!-- Theme Card 5 -->
+        <div class="feature-card text-center" onclick="switchTheme('light')" style="cursor:pointer; border-top: 4px solid #2563EB;">
+          <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg, #2563EB, #FFFFFF);margin:0 auto 12px auto;border:1px solid #ccc;"></div>
+          <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:6px;">Clean Light Mode</h3>
+          <p style="font-size:0.85rem;color:var(--text-muted);">Crisp White Canvas & Royal Indigo for Corporate Law & Finance</p>
+          <button class="btn btn-secondary btn-sm" style="margin-top:12px;width:100%;">Apply Theme</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       3. About / Why Us Section
+       ========================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-badge">आमच्याबद्दल</div>
+        <h2 class="section-title">Why Choose <span class="text-gradient">Webkar Studio</span>?</h2>
+        <p class="section-subtitle">
+          वेबकार स्टुडिओ (Webkar Studio) हा महाराष्ट्र आधारित आधुनिक डिजिटल डिझाइन स्टुडिओ आहे. आम्ही लहान व मोठ्या व्यवसायांना डिजिटल जगात मजबूत ओळख निर्माण करून देतो.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-code"></i></div>
+          <h3 class="feature-title">Clean & Fast Code</h3>
+          <p class="feature-desc">अतिशय जलद आणि सुरक्षित कोडिंग जे तुमच्या वेबसाईटला १ सेकंदात लोड होणारा स्पीड देते.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3 class="feature-title">100% Mobile Responsive</h3>
+          <p class="feature-desc">स्मार्टफोन, टॅबलेट आणि कॉम्प्युटरवर तुमची वेबसाईट अतिशय देखणी आणि सोपी दिसते.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-search-dollar"></i></div>
+          <h3 class="feature-title">SEO & Google Ready</h3>
+          <p class="feature-desc">गूगल सर्चमध्ये तुमचा व्यवसाय अव्वल रँक करण्यासाठी इन-बिल्ट SEO आणि कीवर्ड्स सेटअप.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-headset"></i></div>
+          <h3 class="feature-title">24/7 Local Marathi Support</h3>
+          <p class="feature-desc">मातृभाषेत मराठीतून थेट संवाद, मदत आणि वेबसाईट लाईव्ह झाल्यावरही निरंतर सहकार्य.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       4. Services Section
+       ========================================== -->
+  <section class="section" id="services" style="background: rgba(21, 24, 33, 0.4);">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-badge">डिजिटल सर्व्हिसेस</div>
+        <h2 class="section-title">आमच्या <span class="text-gradient">प्रीमियम सेवा</span></h2>
+        <p class="section-subtitle">तुमच्या बिझनेसच्या गरजेनुसार डिझाइन केलेल्या हाय-कन्व्हर्टिंग डिजिटल सर्व्हिसेस</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div>
+            <div class="service-header">
+              <div class="service-icon-box"><i class="fas fa-briefcase"></i></div>
+            </div>
+            <h3 class="service-title">Business Website Design</h3>
+            <p class="service-desc">कंपनीची आणि ब्रँडची ओळख वाढवणारी आकर्षक व कॉर्पोरेट लेआउट असलेली वेबसाईट.</p>
+          </div>
+          <button class="btn btn-secondary btn-sm open-modal-btn" data-plan="Business Website Design">
+            अधिक जाणून घ्या <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <div class="service-card">
+          <div>
+            <div class="service-header">
+              <div class="service-icon-box"><i class="fas fa-user-circle"></i></div>
+            </div>
+            <h3 class="service-title">Portfolio Website</h3>
+            <p class="service-desc">डॉक्टर्स, वकील, फ्रीलान्सर्स आणि प्रोफेशन्ससाठी प्रभावी पोर्टफोलिओ वेबसाईट.</p>
+          </div>
+          <button class="btn btn-secondary btn-sm open-modal-btn" data-plan="Portfolio Website">
+            अधिक जाणून घ्या <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <div class="service-card">
+          <div>
+            <div class="service-header">
+              <div class="service-icon-box"><i class="fas fa-shopping-cart"></i></div>
+            </div>
+            <h3 class="service-title">E-commerce Website</h3>
+            <p class="service-desc">पेमेंट गेटवे व ऑर्डर मॅनेजमेंटसह ऑनलाईन वस्तू विकण्यासाठी सुरक्षित स्टोअर.</p>
+          </div>
+          <button class="btn btn-secondary btn-sm open-modal-btn" data-plan="E-commerce Website">
+            अधिक जाणून घ्या <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <div class="service-card">
+          <div>
+            <div class="service-header">
+              <div class="service-icon-box"><i class="fas fa-bullhorn"></i></div>
+            </div>
+            <h3 class="service-title">Landing Page Design</h3>
+            <p class="service-desc">फेसबुक व गूगल जाहिरातींद्वारे जास्तीत जास्त ग्राहक मिळवणारे हाय-कन्व्हर्टिंग पेज.</p>
+          </div>
+          <button class="btn btn-secondary btn-sm open-modal-btn" data-plan="Landing Page Design">
+            अधिक जाणून घ्या <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <div class="service-card">
+          <div>
+            <div class="service-header">
+              <div class="service-icon-box"><i class="fas fa-paint-brush"></i></div>
+            </div>
+            <h3 class="service-title">Website Redesign</h3>
+            <p class="service-desc">जुन्या आणि संथ वेबसाईटला आधुनिक, सुपर-फास्ट आणि आकर्षक लुक द्या.</p>
+          </div>
+          <button class="btn btn-secondary btn-sm open-modal-btn" data-plan="Website Redesign">
+            अधिक जाणून घ्या <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <div class="service-card">
+          <div>
+            <div class="service-header">
+              <div class="service-icon-box"><i class="fas fa-tools"></i></div>
+            </div>
+            <h3 class="service-title">Maintenance & Support</h3>
+            <p class="service-desc">रेग्युलर सेक्युरिटी अपडेट्स, स्पीड ऑप्टिमायझेशन आणि डेली बॅकअप सपोर्ट.</p>
+          </div>
+          <button class="btn btn-secondary btn-sm open-modal-btn" data-plan="Maintenance & Support">
+            अधिक जाणून घ्या <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       5. 16+ Industry Designs Showcase Gallery
+       ========================================== -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-badge">16+ Live Industry Layouts</div>
+        <h2 class="section-title">सर्व उद्योगांसाठी <span class="text-gradient">रेडी डिझाइन टेम्पलेट्स</span></h2>
+        <p class="section-subtitle">तुमच्या बिझनेस कॅटेगरीनुसार डिझाइन इन्स्पेक्टर उघडा आणि विविध लेआउट्स तपासा</p>
+      </div>
+
+      <div class="portfolio-filter">
+        <button class="filter-btn active" data-filter="all">सर्व (16 Designs)</button>
+        <button class="filter-btn" data-filter="business">Business & Corporate</button>
+        <button class="filter-btn" data-filter="ecommerce">E-Commerce & Retail</button>
+        <button class="filter-btn" data-filter="services">Services & Health</button>
+        <button class="filter-btn" data-filter="creative">Creative & Agencies</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Design 1 -->
+        <div class="project-card" data-category="business">
+          <div class="project-thumb-wrapper">
+            <img src="images/project-1.webp" alt="Maharashtra Real Estate Portal" class="project-thumb">
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Real Estate Portal</span>
+            <h3 class="project-title">Maharashtra Real Estate Portal</h3>
+            <p class="project-desc">प्रॉपर्टी खरेदी-विक्री, रिअल-टाइम व्हिजिट बुकिंग व लीड जनरेशन लेआउट.</p>
+            <div class="palette-dots">
+              <span class="color-dot" style="background:#3B82F6;"></span>
+              <span class="color-dot" style="background:#1E293B;"></span>
+              <span class="color-dot" style="background:#10B981;"></span>
+            </div>
+            <div class="project-actions" style="margin-top:14px;">
+              <button class="btn btn-secondary btn-sm" onclick="inspectDesign('Maharashtra Real Estate Portal', 'Real Estate', '#3B82F6', '#1E293B', '#10B981', 'Property Listing, Search Filters, WhatsApp Visit Request, Lead Management')">
+                <i class="fas fa-search-plus"></i> Design Inspector
+              </button>
+              <button class="btn btn-whatsapp btn-sm" onclick="openWhatsApp('मला Maharashtra Real Estate Portal टेम्पलेट हवे आहे.')">
+                <i class="fab fa-whatsapp"></i> Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 2 -->
+        <div class="project-card" data-category="ecommerce">
+          <div class="project-thumb-wrapper">
+            <img src="images/project-2.webp" alt="Swadeshi Organic E-Store" class="project-thumb">
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Organic E-Commerce</span>
+            <h3 class="project-title">Swadeshi Organic E-Store</h3>
+            <p class="project-desc">सेंद्रिय शेती माल व मसाल्यांची ऑनलाईन विक्री, कार्ट आणि पेमेंट सिस्टम.</p>
+            <div class="palette-dots">
+              <span class="color-dot" style="background:#10B981;"></span>
+              <span class="color-dot" style="background:#065F46;"></span>
+              <span class="color-dot" style="background:#F59E0B;"></span>
+            </div>
+            <div class="project-actions" style="margin-top:14px;">
+              <button class="btn btn-secondary btn-sm" onclick="inspectDesign('Swadeshi Organic E-Store', 'E-Commerce', '#10B981', '#065F46', '#F59E0B', 'Shopping Cart, Payment Gateway, WhatsApp Order Notification, Coupon System')">
+                <i class="fas fa-search-plus"></i> Design Inspector
+              </button>
+              <button class="btn btn-whatsapp btn-sm" onclick="openWhatsApp('मला Swadeshi Organic E-Store टेम्पलेट हवे आहे.')">
+                <i class="fab fa-whatsapp"></i> Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 3 -->
+        <div class="project-card" data-category="services">
+          <div class="project-thumb-wrapper">
+            <img src="images/project-3.webp" alt="Dr. Patil Dental Specialty Clinic" class="project-thumb">
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Medical & Healthcare</span>
+            <h3 class="project-title">Dr. Patil Dental Specialty Clinic</h3>
+            <p class="project-desc">ऑनलाईन अपॉइंटमेंट बुकिंग कॅलेंडर, ट्रीटमेंट माहिती व पेशंट रिव्ह्यूज.</p>
+            <div class="palette-dots">
+              <span class="color-dot" style="background:#06B6D4;"></span>
+              <span class="color-dot" style="background:#0284C7;"></span>
+              <span class="color-dot" style="background:#E0F2FE;"></span>
+            </div>
+            <div class="project-actions" style="margin-top:14px;">
+              <button class="btn btn-secondary btn-sm" onclick="inspectDesign('Dr. Patil Dental Clinic', 'Healthcare', '#06B6D4', '#0284C7', '#E0F2FE', 'Appointment Scheduler, Doctor Profiles, Emergency Contact, Patient Reviews')">
+                <i class="fas fa-search-plus"></i> Design Inspector
+              </button>
+              <button class="btn btn-whatsapp btn-sm" onclick="openWhatsApp('मला Dr. Patil Dental Clinic टेम्पलेट हवे आहे.')">
+                <i class="fab fa-whatsapp"></i> Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 4 -->
+        <div class="project-card" data-category="business">
+          <div class="project-thumb-wrapper">
+            <img src="images/project-4.webp" alt="Sahyadri Tours & Travel Portal" class="project-thumb">
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Travel & Tourism</span>
+            <h3 class="project-title">Sahyadri Tours & Travels</h3>
+            <p class="project-desc">टूर पॅकेजेस शोकेस, बस/कार बुकिंग कॅल्क्युलेटर व कस्टमर इन्क्वायरी.</p>
+            <div class="palette-dots">
+              <span class="color-dot" style="background:#F97316;"></span>
+              <span class="color-dot" style="background:#0EA5E9;"></span>
+              <span class="color-dot" style="background:#FFF7ED;"></span>
+            </div>
+            <div class="project-actions" style="margin-top:14px;">
+              <button class="btn btn-secondary btn-sm" onclick="inspectDesign('Sahyadri Tours & Travels', 'Travel Agency', '#F97316', '#0EA5E9', '#FFF7ED', 'Tour Itinerary Engine, Custom Quote Generator, Itinerary PDF Download, WhatsApp Booking')">
+                <i class="fas fa-search-plus"></i> Design Inspector
+              </button>
+              <button class="btn btn-whatsapp btn-sm" onclick="openWhatsApp('मला Sahyadri Tours & Travels टेम्पलेट हवे आहे.')">
+                <i class="fab fa-whatsapp"></i> Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 5 -->
+        <div class="project-card" data-category="creative">
+          <div class="project-thumb-wrapper">
+            <img src="images/project-5.webp" alt="Grand Interior Design Studio" class="project-thumb">
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Architecture & Interiors</span>
+            <h3 class="project-title">Grand Interior & Architecture</h3>
+            <p class="project-desc">हाय-डेफिनिशन पोर्टफोलिओ गॅलरी, ३डी डिझाइन मॉडेल व क्लायंट कन्सल्टेशन.</p>
+            <div class="palette-dots">
+              <span class="color-dot" style="background:#EAB308;"></span>
+              <span class="color-dot" style="background:#18181B;"></span>
+              <span class="color-dot" style="background:#71717A;"></span>
+            </div>
+            <div class="project-actions" style="margin-top:14px;">
+              <button class="btn btn-secondary btn-sm" onclick="inspectDesign('Grand Interior & Architecture', 'Interior Design', '#EAB308', '#18181B', '#71717A', 'HD Filterable Portfolio, 3D Render Gallery, Cost Calculator, Consultation Booking')">
+                <i class="fas fa-search-plus"></i> Design Inspector
+              </button>
+              <button class="btn btn-whatsapp btn-sm" onclick="openWhatsApp('मला Grand Interior & Architecture टेम्पलेट हवे आहे.')">
+                <i class="fab fa-whatsapp"></i> Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 6 -->
+        <div class="project-card" data-category="business">
+          <div class="project-thumb-wrapper">
+            <img src="images/project-6.webp" alt="Pune Coaching Academy" class="project-thumb">
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Education & Classes</span>
+            <h3 class="project-title">Pune Coaching Academy</h3>
+            <p class="project-desc">कोर्स डिटेल्स, ऑनलाईन नोट्स, बॅच टायमिंग्स आणि अ‍ॅडमिशन चौकशी फॉर्म.</p>
+            <div class="palette-dots">
+              <span class="color-dot" style="background:#8B5CF6;"></span>
+              <span class="color-dot" style="background:#3B82F6;"></span>
+              <span class="color-dot" style="background:#F3E8FF;"></span>
+            </div>
+            <div class="project-actions" style="margin-top:14px;">
+              <button class="btn btn-secondary btn-sm" onclick="inspectDesign('Pune Coaching Academy', 'Education', '#8B5CF6', '#3B82F6', '#F3E8FF', 'Course Catalog, Online Admission Form, Timetable Showcase, Result Wall')">
+                <i class="fas fa-search-plus"></i> Design Inspector
+              </button>
+              <button class="btn btn-whatsapp btn-sm" onclick="openWhatsApp('मला Pune Coaching Academy टेम्पलेट हवे आहे.')">
+                <i class="fab fa-whatsapp"></i> Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 7 -->
+        <div class="project-card" data-category="business">
+          <div class="project-thumb-wrapper">
+            <img src="images/project-7.webp" alt="Royal Caterers & Events" class="project-thumb">
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Events & Catering</span>
+            <h3 class="project-title">Royal Caterers & Event Mgmt</h3>
+            <p class="project-desc">लग्न व इव्हेंट केटरिंग मेनू, प्लेट रेट कॅल्क्युलेटर व ऑनलाईन बुकिंग.</p>
+            <div class="palette-dots">
+              <span class="color-dot" style="background:#EF4444;"></span>
+              <span class="color-dot" style="background:#F59E0B;"></span>
+              <span class="color-dot" style="background:#78350F;"></span>
+            </div>
+            <div class="project-actions" style="margin-top:14px;">
+              <button class="btn btn-secondary btn-sm" onclick="inspectDesign('Royal Caterers & Event Mgmt', 'Catering', '#EF4444', '#F59E0B', '#78350F', 'Interactive Food Menu Selector, Plate Price Calculator, Date Availability Tracker, Booking Form')">
+                <i class="fas fa-search-plus"></i> Design Inspector
+              </button>
+              <button class="btn btn-whatsapp btn-sm" onclick="openWhatsApp('मला Royal Caterers टेम्पलेट हवे आहे.')">
+                <i class="fab fa-whatsapp"></i> Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 8 -->
+        <div class="project-card" data-category="business">
+          <div class="project-thumb-wrapper">
+            <img src="images/project-8.webp" alt="Zenith Financial Advisory" class="project-thumb">
+          </div>
+          <div class="project-content">
+            <span class="project-tag">CA & Legal Advisory</span>
+            <h3 class="project-title">Zenith Financial & CA Advisory</h3>
+            <p class="project-desc">सीए, टॅक्स कन्सल्टंट व कॉर्पोरेट वकिलांसाठी सोबर ऑथॉरिटी वेबसाईट.</p>
+            <div class="palette-dots">
+              <span class="color-dot" style="background:#1E3A8A;"></span>
+              <span class="color-dot" style="background:#64748B;"></span>
+              <span class="color-dot" style="background:#D97706;"></span>
+            </div>
+            <div class="project-actions" style="margin-top:14px;">
+              <button class="btn btn-secondary btn-sm" onclick="inspectDesign('Zenith Financial Advisory', 'Corporate', '#1E3A8A', '#64748B', '#D97706', 'Consultation Slot Scheduler, Service Fee Calculator, Compliance Guidelines, Client Portal')">
+                <i class="fas fa-search-plus"></i> Design Inspector
+              </button>
+              <button class="btn btn-whatsapp btn-sm" onclick="openWhatsApp('मला Zenith Financial Advisory टेम्पलेट हवे आहे.')">
+                <i class="fab fa-whatsapp"></i> Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 9 (NEW) -->
+        <div class="project-card" data-category="services">
+          <div class="project-thumb-wrapper">
+            <img src="images/project-1.webp" alt="IronPulse Gym & Fitness Studio" class="project-thumb" style="filter:hue-rotate(280deg);">
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Gym & Fitness Hub</span>
+            <h3 class="project-title">IronPulse Fitness & Crossfit</h3>
+            <p class="project-desc">जिम वर्कआउट शेड्यूल्स, ट्रेनर प्रोफाइल, मेंबरशिप प्लॅन्स व बीएमआय कॅल्क्युलेटर.</p>
+            <div class="palette-dots">
+              <span class="color-dot" style="background:#F43F5E;"></span>
+              <span class="color-dot" style="background:#111827;"></span>
+              <span class="color-dot" style="background:#22C55E;"></span>
+            </div>
+            <div class="project-actions" style="margin-top:14px;">
+              <button class="btn btn-secondary btn-sm" onclick="inspectDesign('IronPulse Fitness Studio', 'Gym & Fitness', '#F43F5E', '#111827', '#22C55E', 'Interactive Workout Timetable, BMI Calculator, Membership Plans, Trial Class Booking')">
+                <i class="fas fa-search-plus"></i> Design Inspector
+              </button>
+              <button class="btn btn-whatsapp btn-sm" onclick="openWhatsApp('मला IronPulse Gym टेम्पलेट हवे आहे.')">
+                <i class="fab fa-whatsapp"></i> Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 10 (NEW) -->
+        <div class="project-card" data-category="services">
+          <div class="project-thumb-wrapper">
+            <img src="images/project-3.webp" alt="Glow & Style Beauty Salon" class="project-thumb" style="filter:hue-rotate(120deg);">
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Salon, Beauty & Spa</span>
+            <h3 class="project-title">Glow & Style Beauty Lounge</h3>
+            <p class="project-desc">हेर, स्कीन आणि ब्रायडल मेकअप सर्व्हिस रेट कार्ड व ऑनलाईन अपॉइंटमेंट.</p>
+            <div class="palette-dots">
+              <span class="color-dot" style="background:#EC4899;"></span>
+              <span class="color-dot" style="background:#F472B6;"></span>
+              <span class="color-dot" style="background:#FDF2F8;"></span>
+            </div>
+            <div class="project-actions" style="margin-top:14px;">
+              <button class="btn btn-secondary btn-sm" onclick="inspectDesign('Glow & Style Beauty Lounge', 'Salon & Spa', '#EC4899', '#F472B6', '#FDF2F8', 'Interactive Service Rate Card, Stylist Portfolio, Bridal Package Booking, Slot Reservation')">
+                <i class="fas fa-search-plus"></i> Design Inspector
+              </button>
+              <button class="btn btn-whatsapp btn-sm" onclick="openWhatsApp('मला Glow & Style Beauty Lounge टेम्पलेट हवे आहे.')">
+                <i class="fab fa-whatsapp"></i> Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 11 (NEW) -->
+        <div class="project-card" data-category="services">
+          <div class="project-thumb-wrapper">
+            <img src="images/project-2.webp" alt="AgroTech Farmers Market" class="project-thumb" style="filter:hue-rotate(50deg);">
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Agro-Tech & Rural Business</span>
+            <h3 class="project-title">AgroTech Farmers Market</h3>
+            <p class="project-desc">शेती अवजारे, खते आणि बियाण्यांचे प्रदर्शन व शेतकरी थेट संपर्क प्लॅटफॉर्म.</p>
+            <div class="palette-dots">
+              <span class="color-dot" style="background:#15803D;"></span>
+              <span class="color-dot" style="background:#A16207;"></span>
+              <span class="color-dot" style="background:#FEF08A;"></span>
+            </div>
+            <div class="project-actions" style="margin-top:14px;">
+              <button class="btn btn-secondary btn-sm" onclick="inspectDesign('AgroTech Farmers Market', 'Agro-Tech', '#15803D', '#A16207', '#FEF08A', 'Direct Farmer Connect, Product Showcase, Weather & Market Rate Ticker, Bulk Enquiry')">
+                <i class="fas fa-search-plus"></i> Design Inspector
+              </button>
+              <button class="btn btn-whatsapp btn-sm" onclick="openWhatsApp('मला AgroTech Farmers Market टेम्पलेट हवे आहे.')">
+                <i class="fab fa-whatsapp"></i> Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 12 (NEW) -->
+        <div class="project-card" data-category="creative">
+          <div class="project-thumb-wrapper">
+            <img src="images/project-5.webp" alt="Spicy Bite Restaurant & Food Hub" class="project-thumb" style="filter:hue-rotate(180deg);">
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Restaurant & Food Order</span>
+            <h3 class="project-title">Spicy Bite Restaurant & Bar</h3>
+            <p class="project-desc">डिजिटल क्युआर कोड मेनू, टेबल रिझर्व्हेशन व डायरेक्ट व्हॉट्सॲप ऑर्डरिंग.</p>
+            <div class="palette-dots">
+              <span class="color-dot" style="background:#DC2626;"></span>
+              <span class="color-dot" style="background:#EAB308;"></span>
+              <span class="color-dot" style="background:#18181B;"></span>
+            </div>
+            <div class="project-actions" style="margin-top:14px;">
+              <button class="btn btn-secondary btn-sm" onclick="inspectDesign('Spicy Bite Restaurant', 'Restaurant', '#DC2626', '#EAB308', '#18181B', 'Digital QR Menu, Table Reservation System, Chef Specials Gallery, Direct WhatsApp Order')">
+                <i class="fas fa-search-plus"></i> Design Inspector
+              </button>
+              <button class="btn btn-whatsapp btn-sm" onclick="openWhatsApp('मला Spicy Bite Restaurant टेम्पलेट हवे आहे.')">
+                <i class="fab fa-whatsapp"></i> Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 13 (NEW) -->
+        <div class="project-card" data-category="ecommerce">
+          <div class="project-thumb-wrapper">
+            <img src="images/project-2.webp" alt="Kadam Heritage Jewellery" class="project-thumb" style="filter:hue-rotate(320deg);">
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Jewellery & Luxury Goods</span>
+            <h3 class="project-title">Kadam Heritage Jewellers</h3>
+            <p class="project-desc">सुवर्ण व हिऱ्यांच्या दागिन्यांचे प्रदर्शन, लाईव्ह सोन्याचे दर आणि ऑनलाईन इन्क्वायरी.</p>
+            <div class="palette-dots">
+              <span class="color-dot" style="background:#CA8A04;"></span>
+              <span class="color-dot" style="background:#0F172A;"></span>
+              <span class="color-dot" style="background:#FEF08A;"></span>
+            </div>
+            <div class="project-actions" style="margin-top:14px;">
+              <button class="btn btn-secondary btn-sm" onclick="inspectDesign('Kadam Heritage Jewellers', 'Jewellery Store', '#CA8A04', '#0F172A', '#FEF08A', 'Gold Rate Live Ticker, Jewellery HD Gallery, Virtual Trial Request, Store Location Map')">
+                <i class="fas fa-search-plus"></i> Design Inspector
+              </button>
+              <button class="btn btn-whatsapp btn-sm" onclick="openWhatsApp('मला Kadam Heritage Jewellers टेम्पलेट हवे आहे.')">
+                <i class="fab fa-whatsapp"></i> Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 14 (NEW) -->
+        <div class="project-card" data-category="services">
+          <div class="project-thumb-wrapper">
+            <img src="images/project-4.webp" alt="Precision Auto Garage & Car Rental" class="project-thumb" style="filter:hue-rotate(200deg);">
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Auto Garage & Car Rentals</span>
+            <h3 class="project-title">Precision Auto Garage & Rental</h3>
+            <p class="project-desc">गाडी सर्व्हिसिंग अपॉइंटमेंट, सेल्फ-ड्राइव्ह कार बुकिंग व इमर्जन्सी ब्रेकडाऊन हेल्प.</p>
+            <div class="palette-dots">
+              <span class="color-dot" style="background:#2563EB;"></span>
+              <span class="color-dot" style="background:#1E293B;"></span>
+              <span class="color-dot" style="background:#F97316;"></span>
+            </div>
+            <div class="project-actions" style="margin-top:14px;">
+              <button class="btn btn-secondary btn-sm" onclick="inspectDesign('Precision Auto Garage', 'Automotive', '#2563EB', '#1E293B', '#F97316', 'Car Service Booking, Breakdown Location Share, Rental Fleet Catalog, Transparent Pricing')">
+                <i class="fas fa-search-plus"></i> Design Inspector
+              </button>
+              <button class="btn btn-whatsapp btn-sm" onclick="openWhatsApp('मला Precision Auto Garage टेम्पलेट हवे आहे.')">
+                <i class="fab fa-whatsapp"></i> Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 15 (NEW) -->
+        <div class="project-card" data-category="creative">
+          <div class="project-thumb-wrapper">
+            <img src="images/project-5.webp" alt="PixelCraft Media & Studio" class="project-thumb" style="filter:hue-rotate(300deg);">
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Photography & Video Studio</span>
+            <h3 class="project-title">PixelCraft Media & Studio</h3>
+            <p class="project-desc">फोटोग्राफी पोर्टफोलिओ, वेडिंग फिल्म शोकेस व प्री-वेडिंग शूट पॅकेजेस.</p>
+            <div class="palette-dots">
+              <span class="color-dot" style="background:#A855F7;"></span>
+              <span class="color-dot" style="background:#09090B;"></span>
+              <span class="color-dot" style="background:#38BDF8;"></span>
+            </div>
+            <div class="project-actions" style="margin-top:14px;">
+              <button class="btn btn-secondary btn-sm" onclick="inspectDesign('PixelCraft Media & Studio', 'Media Studio', '#A855F7', '#09090B', '#38BDF8', 'Video Showreel Player, Masonry Photo Gallery, Shoot Date Availability, Quote Estimator')">
+                <i class="fas fa-search-plus"></i> Design Inspector
+              </button>
+              <button class="btn btn-whatsapp btn-sm" onclick="openWhatsApp('मला PixelCraft Media Studio टेम्पलेट हवे आहे.')">
+                <i class="fab fa-whatsapp"></i> Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design 16 (NEW) -->
+        <div class="project-card" data-category="business">
+          <div class="project-thumb-wrapper">
+            <img src="images/project-8.webp" alt="Apex Legal Advocates & Law Firm" class="project-thumb" style="filter:hue-rotate(90deg);">
+          </div>
+          <div class="project-content">
+            <span class="project-tag">Legal Advocates & Law Firm</span>
+            <h3 class="project-title">Apex Legal Advocates & Law Firm</h3>
+            <p class="project-desc">वकील व कायदेशीर सल्लागारांसाठी कायदेशीर सल्ला बुकिंग आणि केस चौकशी.</p>
+            <div class="palette-dots">
+              <span class="color-dot" style="background:#475569;"></span>
+              <span class="color-dot" style="background:#1E293B;"></span>
+              <span class="color-dot" style="background:#E2E8F0;"></span>
+            </div>
+            <div class="project-actions" style="margin-top:14px;">
+              <button class="btn btn-secondary btn-sm" onclick="inspectDesign('Apex Legal Law Firm', 'Legal Services', '#475569', '#1E293B', '#E2E8F0', 'Confidential Consultation Form, Practice Area Details, Advocate Profiles, Legal FAQ Section')">
+                <i class="fas fa-search-plus"></i> Design Inspector
+              </button>
+              <button class="btn btn-whatsapp btn-sm" onclick="openWhatsApp('मला Apex Legal Advocates टेम्पलेट हवे आहे.')">
+                <i class="fab fa-whatsapp"></i> Select
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       5.5 Interactive Website Cost Estimator Calculator
+       ========================================== -->
+  <section class="section" id="calculator" style="background: rgba(11, 13, 18, 0.9);">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-badge">⚡ Instant Cost Estimator</div>
+        <h2 class="section-title">वेबसाईटचा <span class="text-gradient">अंदाज खर्च कॅल्क्युलेट करा</span></h2>
+        <p class="section-subtitle">तुमच्या गरजेनुसार पर्याय निवडा आणि तात्काळ बजेट व डिलिव्हरी कालावधी पहा</p>
+      </div>
+
+      <div class="calc-card">
+        <div class="calc-grid">
+          <div>
+            <!-- Option 1: Package Type -->
+            <div class="calc-option-group">
+              <label class="calc-option-label"><i class="fas fa-layer-group text-gradient"></i> 1. वेबसाईटचा प्रकार (Category)</label>
+              <div class="calc-radio-grid">
+                <div class="calc-radio-card selected" onclick="selectCalcCategory(this, 'Starter Landing Page', 7999, '3-5 Days')">
+                  <div>
+                    <div style="font-weight:700;">Starter Landing Page</div>
+                    <div style="font-size:0.78rem;color:var(--text-muted);">3 ते 5 पेजेस, WhatsApp Bot</div>
+                  </div>
+                </div>
+
+                <div class="calc-radio-card" onclick="selectCalcCategory(this, 'Business Professional', 14999, '5-7 Days')">
+                  <div>
+                    <div style="font-weight:700;">Business Professional</div>
+                    <div style="font-size:0.78rem;color:var(--text-muted);">8 ते 10 पेजेस, Full SEO</div>
+                  </div>
+                </div>
+
+                <div class="calc-radio-card" onclick="selectCalcCategory(this, 'Full E-Commerce Store', 24999, '7-10 Days')">
+                  <div>
+                    <div style="font-weight:700;">Full E-Commerce Store</div>
+                    <div style="font-size:0.78rem;color:var(--text-muted);">अमर्याद उत्पादने, Payment Gateway</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Option 2: Add-on Features -->
+            <div class="calc-option-group">
+              <label class="calc-option-label"><i class="fas fa-puzzle-piece text-gradient"></i> 2. अतिरिक्त फीचर्स (Add-on Features)</label>
+              <div class="calc-checkbox-grid">
+                <div class="calc-checkbox-card" onclick="toggleCalcAddon(this, 'Payment Gateway Integration', 2500)">
+                  <i class="fas fa-credit-card"></i> Payment Gateway (+₹2,500)
+                </div>
+
+                <div class="calc-checkbox-card" onclick="toggleCalcAddon(this, 'Google Business & Local SEO', 1500)">
+                  <i class="fas fa-search-dollar"></i> Local SEO & Google Map (+₹1,500)
+                </div>
+
+                <div class="calc-checkbox-card" onclick="toggleCalcAddon(this, 'Multi-Language (Marathi/English)', 1800)">
+                  <i class="fas fa-language"></i> द्विभाषिक (मराठी+इंग्रजी) (+₹1,800)
+                </div>
+
+                <div class="calc-checkbox-card" onclick="toggleCalcAddon(this, 'Admin Content Dashboard', 3000)">
+                  <i class="fas fa-sliders-h"></i> अ‍ॅडमिन मॅनेजमेंट पॅनेल (+₹3,000)
+                </div>
+
+                <div class="calc-checkbox-card" onclick="toggleCalcAddon(this, 'Speed & Security Booster', 1000)">
+                  <i class="fas fa-bolt"></i> टर्बो स्पीड + SSL (+₹1,000)
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Summary Sticky Box -->
+          <div>
+            <div class="calc-summary-box">
+              <div style="font-size:0.85rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;">Estimated Investment</div>
+              <div class="calc-price-amount" id="calcTotalPrice">₹7,999</div>
+              <div style="font-size:0.88rem;color:#10B981;font-weight:600;" id="calcDeliveryTime">⚡ 3-5 दिवसांत तयार!</div>
+
+              <ul class="calc-breakdown-list" id="calcBreakdownList">
+                <li class="calc-breakdown-item">
+                  <span>Starter Landing Page</span>
+                  <span>₹7,999</span>
+                </li>
+              </ul>
+
+              <button class="btn btn-whatsapp" style="width:100%;margin-top:10px;" onclick="sendCalculatedQuote()">
+                <i class="fab fa-whatsapp"></i> हा प्लॅन WhatsApp वर पाठवा
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       6. Process Section
+       ========================================== -->
+  <section class="section" id="process" style="background: rgba(21, 24, 33, 0.4);">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-badge">कार्यपद्धत</div>
+        <h2 class="section-title">काम करण्याची <span class="text-gradient">सोपी प्रक्रिया</span></h2>
+        <p class="section-subtitle">फक्त ४ टप्प्यांत तुमची वेबसाईट तयार करून लाईव्ह केली जाते</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="process-number">01</div>
+          <h3 class="process-title">Requirement & Plan</h3>
+          <p class="process-desc">तुमच्या बिझनेसच्या गरजा, उद्दिष्टे आणि आवडणारे डिझाइन समजून प्लॅनिंग तयार करतो.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-number">02</div>
+          <h3 class="process-title">UI/UX Design</h3>
+          <p class="process-desc">आकर्षक कलर स्कीम, लोगो आणि सोपा लेआउट तयार करून तुम्हाला दाखवला जातो.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-number">03</div>
+          <h3 class="process-title">Development & Test</h3>
+          <p class="process-desc">सुपर-फास्ट कोडिंग, SEO ऑप्टिमायझेशन आणि मोबाईल टेस्टींग पूर्ण केले जाते.</p>
+        </div>
+
+        <div class="process-card">
+          <div class="process-number">04</div>
+          <h3 class="process-title">Final Launch</h3>
+          <p class="process-desc">तुमच्या स्वतःच्या डोमेनवर वेबसाईट लाईव्ह केली जाते व सपोर्ट दिला जातो.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       7. Pricing Section
+       ========================================== -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-badge">पारदर्शक दर</div>
+        <h2 class="section-title">बजेट-फ्रेंडली <span class="text-gradient">प्रायसिंग प्लॅन्स</span></h2>
+        <p class="section-subtitle">कोणतेही लपलेले शुल्क नाही, थेट आणि परवडणारे प्लॅन्स</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Starter Plan -->
+        <div class="pricing-card">
+          <h3 class="pricing-plan">Starter Package</h3>
+          <div class="pricing-price">₹7,999 <span>/ वन-टाईम</span></div>
+          <p class="pricing-desc">लहान व्यवसाय आणि स्टार्टअप्ससाठी सर्वोत्तम सुरुवात.</p>
+
+          <ul class="pricing-features">
+            <li class="pricing-feature-item"><i class="fas fa-check-circle"></i> 3 to 5 Pages Website</li>
+            <li class="pricing-feature-item"><i class="fas fa-check-circle"></i> 100% Mobile Responsive</li>
+            <li class="pricing-feature-item"><i class="fas fa-check-circle"></i> Contact Form & Google Maps</li>
+            <li class="pricing-feature-item"><i class="fas fa-check-circle"></i> WhatsApp Chat Button</li>
+            <li class="pricing-feature-item"><i class="fas fa-check-circle"></i> Free SSL Certificate</li>
+            <li class="pricing-feature-item"><i class="fas fa-check-circle"></i> 1 Month Free Support</li>
+          </ul>
+
+          <button class="btn btn-secondary" onclick="openWhatsApp('नमस्कार Webkar Studio, मला Starter Package (₹7,999) प्लॅन निवडायचा आहे.')">
+            Plan निवडा <i class="fab fa-whatsapp"></i>
+          </button>
+        </div>
+
+        <!-- Professional Plan (Featured) -->
+        <div class="pricing-card featured">
+          <div class="popular-badge">Most Popular</div>
+          <h3 class="pricing-plan">Professional Package</h3>
+          <div class="pricing-price">₹14,999 <span>/ वन-टाईम</span></div>
+          <p class="pricing-desc">वेगाने वाढणाऱ्या बिझनेससाठी पूर्ण डिजिटल सोल्यूशन.</p>
+
+          <ul class="pricing-features">
+            <li class="pricing-feature-item"><i class="fas fa-check-circle"></i> Up to 10 Pages Website</li>
+            <li class="pricing-feature-item"><i class="fas fa-check-circle"></i> Custom Premium Design</li>
+            <li class="pricing-feature-item"><i class="fas fa-check-circle"></i> Speed & SEO Optimization</li>
+            <li class="pricing-feature-item"><i class="fas fa-check-circle"></i> Social Media Integration</li>
+            <li class="pricing-feature-item"><i class="fas fa-check-circle"></i> Domain & Hosting Support</li>
+            <li class="pricing-feature-item"><i class="fas fa-check-circle"></i> 6 Months Priority Maintenance</li>
+          </ul>
+
+          <button class="btn btn-primary" onclick="openWhatsApp('नमस्कार Webkar Studio, मला Professional Package (₹14,999) प्लॅन निवडायचा आहे.')">
+            Plan निवडा <i class="fab fa-whatsapp"></i>
+          </button>
+        </div>
+
+        <!-- Premium E-Commerce -->
+        <div class="pricing-card">
+          <h3 class="pricing-plan">Premium E-Commerce</h3>
+          <div class="pricing-price">₹24,999 <span>/ वन-टाईम</span></div>
+          <p class="pricing-desc">ऑनलाइन वस्तू विकण्यासाठी संपूर्ण ई-कॉमर्स स्टोअर.</p>
+
+          <ul class="pricing-features">
+            <li class="pricing-feature-item"><i class="fas fa-check-circle"></i> Full Online Shopping Store</li>
+            <li class="pricing-feature-item"><i class="fas fa-check-circle"></i> Payment Gateway Setup</li>
+            <li class="pricing-feature-item"><i class="fas fa-check-circle"></i> Order Alert on WhatsApp</li>
+            <li class="pricing-feature-item"><i class="fas fa-check-circle"></i> Easy Admin Dashboard</li>
+            <li class="pricing-feature-item"><i class="fas fa-check-circle"></i> Coupon Code System</li>
+            <li class="pricing-feature-item"><i class="fas fa-check-circle"></i> 1 Year Full Maintenance</li>
+          </ul>
+
+          <button class="btn btn-secondary" onclick="openWhatsApp('नमस्कार Webkar Studio, मला Premium E-Commerce (₹24,999) प्लॅन निवडायचा आहे.')">
+            Plan निवडा <i class="fab fa-whatsapp"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       8. Testimonials Slider
+       ========================================== -->
+  <section class="section" id="testimonials" style="background: rgba(21, 24, 33, 0.4);">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-badge">क्लायंटचे अभिप्राय</div>
+        <h2 class="section-title">आमच्या <span class="text-gradient">ग्राहकांचे अनुभव</span></h2>
+        <p class="section-subtitle">वेबकार स्टुडिओवर विश्वास ठेवणाऱ्या काही उद्योजकांच्या प्रतिक्रिया</p>
+      </div>
+
+      <div class="testimonials-wrapper">
+        <div class="testimonials-track" id="testimonialTrack">
+          <!-- Slide 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testimonial-text">"Webkar Studio मुळे आमच्या कंपनीची विक्री ३ पट वाढली. डिझाइन अतिशय मॉडर्न आणि फास्ट आहे!"</p>
+            <div class="testimonial-client">
+              <span class="client-name">अमित देशपांडे</span>
+              <span class="client-role">Swarajya Tech, Pune</span>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testimonial-text">"वेळेत काम पूर्ण केले आणि मोबाईलवर क्लिनिकची वेबसाईट अतिशय सुरेख दिसते. रुग्णांना बुक करणे सोपे झाले आहे."</p>
+            <div class="testimonial-client">
+              <span class="client-name">डॉ. सुप्रिया पाटील</span>
+              <span class="client-role">Patil Dental Clinic, Nashik</span>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testimonial-text">"आमचे ई-कॉमर्स स्टोअर अतिशय फास्ट आणि सुरक्षित बनवले आहे. सर्व्हिस १ नंबर!"</p>
+            <div class="testimonial-client">
+              <span class="client-name">विजय कदम</span>
+              <span class="client-role">Kadam Jewellers, Kolhapur</span>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testimonial-text">"खूप सोप्या भाषेत मार्गदर्शन केले. मराठीतून सपोर्ट मिळाल्यामुळे काम समजायला सोपे झाले."</p>
+            <div class="testimonial-client">
+              <span class="client-name">गणेश मोटे</span>
+              <span class="client-role">Sahyadri Agro, Satara</span>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p class="testimonial-text">"माझा आर्किटेक्चर पोर्टफोलिओ बघून क्लायंट्स खूप प्रभावित होतात. आंतरराष्ट्रीय दर्जाचे काम वाटते."</p>
+            <div class="testimonial-client">
+              <span class="client-name">स्नेहल जगताप</span>
+              <span class="client-role">Architect Studio, Mumbai</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-controls">
+          <button class="slider-btn" id="prevTestimonial" aria-label="Previous Testimonial"><i class="fas fa-arrow-left"></i></button>
+          <button class="slider-btn" id="nextTestimonial" aria-label="Next Testimonial"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       9. FAQ Accordion
+       ========================================== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-badge">FAQ</div>
+        <h2 class="section-title">सतत विचारले जाणारे <span class="text-gradient">प्रश्न</span></h2>
+        <p class="section-subtitle">वेबसाईट डिझाइनसंदर्भात तुमच्या मनातील शंकांचे निरसन</p>
+      </div>
+
+      <div class="faq-container">
+        <!-- FAQ 1 -->
+        <div class="faq-item active">
+          <div class="faq-header">
+            <h3 class="faq-question">Q1: वेबसाईट तयार करायला किती दिवस लागतात?</h3>
+            <div class="faq-toggle-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            उत्तर: साधारणपणे ४ ते ७ दिवसांत आम्ही संपूर्ण वेबसाईट डिझाइन करून चाचणीनंतर लाईव्ह करतो.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-question">Q2: पेमेंट पद्धत कशी असते?</h3>
+            <div class="faq-toggle-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            उत्तर: काम सुरू करताना ५०% अ‍ॅडव्हान्स रक्कम आणि काम पूर्ण होऊन वेबसाईट लाईव्ह करताना उर्वरित ५०% रक्कम स्वीकारली जाते.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-question">Q3: डोमेन आणि होस्टिंग मिळून मिळेल का?</h3>
+            <div class="faq-toggle-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            उत्तर: होय! आम्ही तुम्हाला योग्य डोमेन नेम खरेदी आणि हाय-स्पीड होस्टिंग सेटअपसाठी पूर्ण मार्गदर्शन आणि मदत पुरवतो.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-question">Q4: नंतर काही बदल करायचे असल्यास फ्री बदल मिळतील का?</h3>
+            <div class="faq-toggle-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            उत्तर: होय! वेबसाईट लाईव्ह झाल्यानंतर पहिल्या ३० दिवसांत सर्व लहान-मोठे बदल मोफत केले जातात.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <div class="faq-header">
+            <h3 class="faq-question">Q5: मला कोडिंग येत नाही, मी वेबसाईट हँडल करू शकेन का?</h3>
+            <div class="faq-toggle-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            उत्तर: होय, अगदी सहज! आम्ही तुम्हाला सोपा व्हिडिओ गाईड देतो ज्यामुळे तुम्ही मजकूर आणि फोटो सहजरीत्या अपडेट करू शकाल.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       10. Contact / CTA Section
+       ========================================== -->
+  <section class="section" id="contact" style="background: linear-gradient(180deg, rgba(11,13,18,1) 0%, rgba(21,24,33,0.8) 100%);">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <div class="section-badge">संपर्क साधा</div>
+          <h2 class="section-title">आजच तुमच्या बिझनेसची <span class="text-gradient">वेबसाईट सुरू करा!</span></h2>
+          <p class="section-subtitle" style="margin: 0 0 30px 0;">
+            तुमच्या कल्पनेला डिजिटल जगात प्रत्यक्ष साकार करण्यासाठी आमच्याशी आताच संपर्क साधा.
+          </p>
+
+          <div style="display:flex;gap:12px;margin-bottom:30px;flex-wrap:wrap;">
+            <button class="btn btn-whatsapp" onclick="openWhatsApp('नमस्कार Webkar Studio, मला तात्काळ वेबसाईट सुरू करायची आहे.')">
+              <i class="fab fa-whatsapp"></i> WhatsApp करा
+            </button>
+            <a href="tel:+919876543210" class="btn btn-secondary">
+              <i class="fas fa-phone-alt"></i> थेट कॉल करा: +91 98765 43210
+            </a>
+          </div>
+
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <div style="font-size:0.85rem;color:var(--text-muted);">ईमेल पत्ता</div>
+                <div style="font-weight:700;">hello@webkarstudio.com</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <div style="font-size:0.85rem;color:var(--text-muted);">स्थान</div>
+                <div style="font-weight:700;">महाराष्ट्र, भारत</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <div style="font-size:0.85rem;color:var(--text-muted);">कामाची वेळ</div>
+                <div style="font-weight:700;">सोम-शनि सकाळी १०:०० ते संध्याकाळी ७:००</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <h3 style="font-size:1.4rem;font-weight:800;margin-bottom:20px;">फ्री इन्क्वायरी फॉर्म</h3>
+          <form id="mainContactForm">
+            <div class="form-group">
+              <label class="form-label" for="contactName">तुमचे पूर्ण नाव</label>
+              <input type="text" id="contactName" class="form-input" placeholder="उदा. राहुल पाटील" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactPhone">फोन / WhatsApp नंबर</label>
+              <input type="tel" id="contactPhone" class="form-input" placeholder="उदा. 9876543210" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactService">वेबसाईटचा प्रकार</label>
+              <select id="contactService" class="form-select">
+                <option value="Business Website">Business Website</option>
+                <option value="Portfolio Website">Portfolio Website</option>
+                <option value="E-Commerce Store">E-Commerce Store</option>
+                <option value="Landing Page">Landing Page</option>
+                <option value="Website Redesign">Website Redesign</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactMessage">अधिक माहिती (ऐच्छिक)</label>
+              <textarea id="contactMessage" class="form-textarea" rows="3" placeholder="तुमच्या व्यवसायाबद्दल थोडक्यात सांगा..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+              <i class="fab fa-whatsapp"></i> WhatsApp वर मेसेज पाठवा
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       11. Footer
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#" class="brand-logo">
+            <div class="brand-icon">W</div>
+            <span>Webkar<span class="text-gradient">Studio</span></span>
+          </a>
+          <p class="footer-col-desc">
+            महाराष्ट्रातील व्यवसायांसाठी अ‍ॅट्रॅक्टिव्ह, हाय-कन्व्हर्टिंग आणि आधुनिक वेबसाईट्स डिझाइन करणारा विश्वासू स्टुडिओ.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#about">आमच्याबद्दल</a></li>
+            <li><a href="#services">सेवा</a></li>
+            <li><a href="#portfolio">प्रोजेक्ट्स</a></li>
+            <li><a href="#pricing">प्रायसिंग प्लॅन्स</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">संपर्क माहिती</h4>
+          <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:10px;">📍 महाराष्ट्र, भारत</p>
+          <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:10px;">📞 +91 98765 43210</p>
+          <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:16px;">✉️ hello@webkarstudio.com</p>
+          <button class="btn btn-whatsapp btn-sm" onclick="openWhatsApp('नमस्कार Webkar Studio')">
+            <i class="fab fa-whatsapp"></i> WhatsApp Chat
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Webkar Studio. All Rights Reserved. Designed for Growth.</div>
+        <div>Made with ❤️ in Maharashtra, India</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Bubble -->
+  <a href="javascript:void(0);" onclick="openWhatsApp('नमस्कार Webkar Studio, मला वेबसाईटबद्दल चर्चा करायची आहे.')" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Consultation Modal Window -->
+  <div class="modal-overlay" id="consultationModal">
+    <div class="modal-container">
+      <button class="modal-close" id="modalCloseBtn">&times;</button>
+      <h3 style="font-size:1.5rem;font-weight:800;margin-bottom:6px;">फ्री कन्सल्टेशन बुक करा</h3>
+      <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:20px;">माहिती भरा आणि आम्ही थेट WhatsApp वर संपर्क साधू.</p>
+
+      <form id="modalForm">
+        <div class="form-group">
+          <label class="form-label" for="modalName">तुमचे नाव</label>
+          <input type="text" id="modalName" class="form-input" placeholder="उदा. राहुल पाटील" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalPhone">मोबाईल / WhatsApp नंबर</label>
+          <input type="tel" id="modalPhone" class="form-input" placeholder="उदा. 9876543210" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalProjectReq">प्लॅन / गरज</label>
+          <input type="text" id="modalProjectReq" class="form-input" value="Free Consultation">
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%;">
+          <i class="fab fa-whatsapp"></i> WhatsApp द्वारे कनेक्ट व्हा
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Interactive Design Inspector Modal -->
+  <div class="modal-overlay" id="inspectorModal">
+    <div class="modal-container inspector-modal-container">
+      <button class="modal-close" onclick="closeInspectorModal()">&times;</button>
+      
+      <div style="text-align:center;margin-bottom:16px;">
+        <span class="project-tag" id="inspectorCategoryTag">Real Estate</span>
+        <h3 style="font-size:1.6rem;font-weight:900;" id="inspectorTitle">Maharashtra Real Estate Portal</h3>
+        <p style="color:var(--text-muted);font-size:0.88rem;" id="inspectorFeatures">Property Listing, Search Filters, WhatsApp Visit Request</p>
+      </div>
+
+      <!-- Device Viewport Switcher -->
+      <div class="device-switcher-bar">
+        <button class="device-btn active" onclick="setInspectorDevice('desktop')"><i class="fas fa-desktop"></i> Desktop</button>
+        <button class="device-btn" onclick="setInspectorDevice('tablet')"><i class="fas fa-tablet-alt"></i> Tablet</button>
+        <button class="device-btn" onclick="setInspectorDevice('mobile')"><i class="fas fa-mobile-alt"></i> Mobile</button>
+      </div>
+
+      <!-- Mockup Viewport -->
+      <div class="mockup-viewport-frame desktop" id="mockupFrame">
+        <div class="mockup-header-bar">
+          <span class="mockup-dot red"></span>
+          <span class="mockup-dot yellow"></span>
+          <span class="mockup-dot green"></span>
+          <span style="font-size:0.75rem;color:var(--text-muted);margin-left:12px;" id="mockupUrlBar">https://webkarstudio.com/preview/real-estate</span>
+        </div>
+        <div class="mockup-canvas" id="mockupCanvas">
+          <!-- Rendered layout dynamically via JS -->
+        </div>
+      </div>
+
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;border-top:1px solid var(--border-color);padding-top:16px;">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span style="font-size:0.85rem;color:var(--text-muted);">Selected Palette:</span>
+          <span class="color-dot" id="swatch1" style="width:18px;height:18px;"></span>
+          <span class="color-dot" id="swatch2" style="width:18px;height:18px;"></span>
+          <span class="color-dot" id="swatch3" style="width:18px;height:18px;"></span>
+        </div>
+
+        <button class="btn btn-whatsapp" id="inspectorWhatsAppBtn" onclick="openWhatsApp('नमस्कार Webkar Studio, मला हा डिझाइन लेआउट आवडला आहे.')">
+          <i class="fab fa-whatsapp"></i> हा डिझाइन लेआउट निवडा
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toastNotification">
+    <i class="fas fa-palette text-gradient" style="font-size:1.2rem;"></i>
+    <span id="toastMessage">थीम बदलली: Midnight Cyber</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
