@@ -4,7 +4,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  const WHATSAPP_NUMBER = '919876543210';
+  const WHATSAPP_NUMBER = '918329931123';
 
   // Helper: Open WhatsApp with encoded message
   window.openWhatsApp = function(customMessage) {
