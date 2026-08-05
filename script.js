@@ -214,9 +214,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const name = document.getElementById('contactName').value.trim();
       const phone = document.getElementById('contactPhone').value.trim();
       const service = document.getElementById('contactService').value;
+      const colorCombo = document.getElementById('contactColorCombo').value;
       const details = document.getElementById('contactMessage').value.trim();
 
-      const message = `नमस्कार Webkar Studio,\n\nमाझी वेबसाईट इन्क्वायरी:\n👤 नाव: ${name}\n📞 फोन: ${phone}\n💼 सर्व्हिस: ${service}\n📝 अधिक माहिती: ${details || 'माहिती उपलब्ध नाही'}\n\nमला ही वेबसाईट लवकरात लवकर बनवायची आहे.`;
+      const message = `नमस्कार Webkar Studio,\n\nमाझी वेबसाईट इन्क्वायरी:\n👤 नाव: ${name}\n📞 फोन: ${phone}\n💼 सर्व्हिस: ${service}\n🎨 कलर कॉम्बिनेशन: ${colorCombo}\n📝 अधिक माहिती: ${details || 'माहिती उपलब्ध नाही'}\n\nमला ही वेबसाईट लवकरात लवकर बनवायची आहे.`;
 
       openWhatsApp(message);
     });
