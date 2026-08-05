@@ -616,17 +616,22 @@ body {
   aspect-ratio: 16 / 10;
   overflow: hidden;
   position: relative;
+  background: #0A0E12;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .project-thumb {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: top center;
   transition: transform 0.5s ease;
 }
 
 .project-card:hover .project-thumb {
-  transform: scale(1.08);
+  transform: scale(1.04);
 }
 
 .project-content {
